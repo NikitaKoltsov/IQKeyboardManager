@@ -1667,11 +1667,11 @@ Codeless drop-in universal library allows to prevent issues of keyboard sliding 
                                 animatedContentOffset = self._textFieldView?.superviewOfClassType(UIStackView.self, belowView: scrollView) != nil
                             }
                             
-                            if animatedContentOffset {
-                                scrollView.setContentOffset(newContentOffset, animated: UIView.areAnimationsEnabled)
-                            } else {
-                                scrollView.contentOffset = newContentOffset
-                            }
+//                            if animatedContentOffset {
+//                                scrollView.setContentOffset(newContentOffset, animated: UIView.areAnimationsEnabled)
+//                            } else {
+//                                scrollView.contentOffset = newContentOffset
+//                            }
                             
                             self.showLog("Restoring contentOffset to: \(self._startingContentOffset)")
                         }
